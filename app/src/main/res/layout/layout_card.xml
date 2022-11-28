@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background_card">
+
+    <ImageView
+        android:id="@+id/ivCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tvCardNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCardNumber"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_mastercard" />
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/main_black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivCardType"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="4455 1223 3488 1000" />
+
+    <ImageView
+        android:id="@+id/ivCardholderPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/tvCardholderName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCardholderName"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvCardholderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/main_grey"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvValidDate"
+        app:layout_constraintEnd_toStartOf="@id/tvValidDate"
+        app:layout_constraintStart_toEndOf="@id/ivCardType"
+        app:layout_constraintTop_toTopOf="@id/tvValidDateLabel"
+        tools:text="Anton Ivanov" />
+
+    <TextView
+        android:id="@+id/tvValidDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/valid_date_label"
+        android:textColor="@color/main_grey"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCardNumber"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvValidDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_grey"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvValidDateLabel"
+        tools:text="12/22" />
+
+    <TextView
+        android:id="@+id/tvBalanceInCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvBalance"
+        app:layout_constraintEnd_toStartOf="@id/tvBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvBalanceLabel"
+        tools:text="£2 125,12" />
+
+    <TextView
+        android:id="@+id/tvBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/my_balance"
+        android:textColor="@color/main_grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvValidDate"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBalanceLabel"
+        tools:text="$2 617.14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

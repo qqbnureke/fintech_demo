@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llGbp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:background="@drawable/shape_background_currency_selected">
+
+    <TextView
+        android:id="@+id/tvSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_white"
+        android:textSize="30sp"
+        tools:text="@string/sign_gbp" />
+
+    <TextView
+        android:id="@+id/tvCurrencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main_white"
+        android:textSize="16sp"
+        tools:text="@string/currency_gbp" />
+</LinearLayout>
